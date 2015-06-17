@@ -1,17 +1,34 @@
 # http://www.appveyor.com/docs/appveyor-yml
 
+<<<<<<< Updated upstream
 # Fix line endings in Windows. (runs before repo cloning)
 init:
   - git config --global core.autocrlf true
+=======
+# Leave line endings as-is
+init:
+  - git config --global core.autocrlf input
+>>>>>>> Stashed changes
 
 # Test against these versions of Node.js.
 environment:
   matrix:
+<<<<<<< Updated upstream
     - nodejs_version: "0.12"
+=======
+    # appveyor doesn't know what node 0.12.0 is, don't test with node for now.
+    #- nodejs_version: "0.12.0"
+    # io.js 1.x
+    - nodejs_version: "1.5.0"
+
+platform:
+  - x64
+>>>>>>> Stashed changes
 
 # Install scripts. (runs after repo cloning)
 install:
   # Get the latest stable version of Node 0.STABLE.latest
+<<<<<<< Updated upstream
   - ps: Install-Product node $env:nodejs_version
   # Install PhantomJS
   - cinst PhantomJS -y
@@ -24,13 +41,28 @@ install:
   - set PATH=%APPDATA%\npm;%PATH%
   - npm config set cache C:\nc
   - npm version
+=======
+  - ps: Install-Product node $env:nodejs_version $env:platform
+  # Install PhantomJS
+  #- cinst PhantomJS
+  #- set path=%path%;C:\tools\PhantomJS\
+  #- dir C:\tools\PhantomJS
+  # Typical npm stuff.
+  - md C:\nc
+  - npm config set cache C:\nc
+  - npm install -g sails ember-cli
+>>>>>>> Stashed changes
   - npm install
 
 # Post-install test scripts.
 test_script:
   # Output useful info for debugging.
   - npm version
+<<<<<<< Updated upstream
   - cmd: npm run test-all
+=======
+  - npm test
+>>>>>>> Stashed changes
 
 # Don't actually build.
 build: off

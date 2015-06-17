@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 sudo: false
 env:
   - NODE_VERSION=0.10
@@ -24,3 +25,29 @@ install:
 after_script:
   - cat coverage/lcov.info | codeclimate
   - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
+=======
+language: node_js
+sudo: false
+node_js:
+  - "0.12"
+  - "iojs"
+  - "iojs-v1.8.1"
+before_install:
+  - npm config set spin false
+  - npm install -g sails
+#  - npm install -g codeclimate-test-reporter
+script: "npm test"
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/aa208e58da24be802fcb
+    on_success: change
+    on_failure: always
+    on_start: false
+
+# addons:
+#   code_climate:
+#     repo_token: c44929e370fd9994b6ea628ef65b13c87bb0c479903ef2740557adeab4e1500b
+# after_script:
+#   - cat lcov.info | codeclimate
+>>>>>>> Stashed changes

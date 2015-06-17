@@ -59,6 +59,11 @@ CloudFoundry: http://cloudfoundry.org/index.html
 
 ####################################################
 VVV Originally Copied From SANE STACK README.md VVV
+
+Specifically:
+Repo: https://github.com/artificialio/sane
+branch: master
+commit: f7ec792c7ec7e5c979c1f2707044bb6e46dd4cce
 ####################################################
 
 <p align="center">
