@@ -123,3 +123,13 @@ SANE Stack is [MIT Licensed](https://github.com/artificialio/sails-ember-starter
 
 Built with love by [Artificial Labs](http://artificial.io/) and [contributors](https://github.com/artificialio/sane/graphs/contributors) <3
 
+Revision history:
+
+6/17/2015 1:50 PM EST -
+
+Copied from:
+  Repo: https://github.com/ember-cli/ember-cli
+  branch: master
+  commit: 9c13432d0668980940df69fc587e1c9904f4cdef
+  comment: Merge pull request #4300 from rwjblue/update-ember-release
+
