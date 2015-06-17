@@ -1,2 +1,6 @@
-tests
-src
+tests/
+tmp/
+
+.editorconfig
+.npmignore
+**/.gitkeep
