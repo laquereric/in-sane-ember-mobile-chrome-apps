@@ -59,11 +59,6 @@ CloudFoundry: http://cloudfoundry.org/index.html
 
 ####################################################
 VVV Originally Copied From SANE STACK README.md VVV
-
-Specifically:
-Repo: https://github.com/artificialio/sane
-branch: master
-commit: f7ec792c7ec7e5c979c1f2707044bb6e46dd4cce
 ####################################################
 
 <p align="center">
@@ -138,3 +133,10 @@ Copied from:
   commit: 9c13432d0668980940df69fc587e1c9904f4cdef
   comment: Merge pull request #4300 from rwjblue/update-ember-release
 
+6/17/2015 1:57 PM EST -
+
+Copied from:
+    Repo: https://github.com/artificialio/sane
+    branch: master
+    commit: f7ec792c7ec7e5c979c1f2707044bb6e46dd4cce
+    comment: Merge pull request #156 from IanVS/fix_no-global-ember
